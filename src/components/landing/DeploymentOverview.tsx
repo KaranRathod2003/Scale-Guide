@@ -74,7 +74,7 @@ export default function DeploymentOverview() {
         viewport={{ once: true }}
         className="mb-8 text-center sm:mb-12"
       >
-        <span className="mb-3 inline-block rounded-full border border-emerald-400/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">Hot Topic</span>
+        <span className="mb-3 inline-block rounded-full border border-cyan-400/20 bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-400">Hot Topic</span>
         <h2 className="text-2xl font-bold text-white sm:text-3xl">Deployment Strategies</h2>
         <p className="mt-3 max-w-2xl mx-auto text-zinc-200">
           Everyone knows &quot;blue-green&quot; and &quot;canary&quot; as buzzwords. We show you the $2.3M failure when Shopify skipped

@@ -13,14 +13,14 @@ function getStatusColor(version: 'v1' | 'v2', status: string): string {
   if (status === 'failing') return '#ef4444';
   if (status === 'draining' || status === 'stopped') return '#71717a';
   if (status === 'deploying') return '#a1a1aa';
-  return version === 'v1' ? '#3b82f6' : '#22c55e';
+  return version === 'v1' ? '#3b82f6' : '#22d3ee';
 }
 
 function getGlowColor(version: 'v1' | 'v2', status: string): string {
   if (status === 'failing') return 'rgba(239, 68, 68, 0.3)';
   if (status === 'deploying') return 'rgba(161, 161, 170, 0.15)';
   if (status === 'draining' || status === 'stopped') return 'transparent';
-  return version === 'v1' ? 'rgba(59, 130, 246, 0.2)' : 'rgba(34, 197, 94, 0.2)';
+  return version === 'v1' ? 'rgba(59, 130, 246, 0.2)' : 'rgba(34, 211, 238, 0.2)';
 }
 
 export default function ServerIcon({ version, status, size = 56, label }: ServerIconProps) {

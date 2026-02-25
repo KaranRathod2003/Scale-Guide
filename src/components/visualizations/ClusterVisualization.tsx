@@ -211,7 +211,7 @@ export default function ClusterVisualization() {
                         <span className="font-medium text-zinc-200">{node.label}</span>
                         <span className="text-zinc-400">{node.type}</span>
                       </div>
-                      <span className={`font-medium ${node.status === 'ready' ? 'text-green-400' : node.status === 'provisioning' ? 'text-yellow-400' : node.status === 'draining' ? 'text-red-400' : 'text-zinc-400'}`}>
+                      <span className={`font-medium ${node.status === 'ready' ? 'text-cyan-400' : node.status === 'provisioning' ? 'text-yellow-400' : node.status === 'draining' ? 'text-red-400' : 'text-zinc-400'}`}>
                         {node.status === 'ready' && `${node.pods.length} pods`}
                         {node.status === 'provisioning' && 'Booting...'}
                         {node.status === 'draining' && 'Draining'}

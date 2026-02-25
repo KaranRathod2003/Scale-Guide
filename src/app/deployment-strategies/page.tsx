@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const complexityColor: Record<string, string> = {
-  low: 'text-green-400',
+  low: 'text-cyan-400',
   medium: 'text-yellow-400',
   high: 'text-red-400',
 };
@@ -62,28 +62,28 @@ export default function DeploymentStrategiesIndex() {
           <tbody className="text-zinc-200">
             <tr className="border-b border-zinc-700/50">
               <td className="px-4 py-3 text-zinc-300">Downtime</td>
-              <td className="px-4 py-3 text-green-400">None</td>
-              <td className="px-4 py-3 text-green-400">None</td>
-              <td className="px-4 py-3 text-green-400">None</td>
+              <td className="px-4 py-3 text-cyan-400">None</td>
+              <td className="px-4 py-3 text-cyan-400">None</td>
+              <td className="px-4 py-3 text-cyan-400">None</td>
               <td className="px-4 py-3 text-yellow-400">Brief</td>
-              <td className="px-4 py-3 text-green-400">None</td>
-              <td className="px-4 py-3 text-green-400">None</td>
+              <td className="px-4 py-3 text-cyan-400">None</td>
+              <td className="px-4 py-3 text-cyan-400">None</td>
             </tr>
             <tr className="border-b border-zinc-700/50">
               <td className="px-4 py-3 text-zinc-300">Rollback speed</td>
-              <td className="px-4 py-3 text-green-400">Instant</td>
+              <td className="px-4 py-3 text-cyan-400">Instant</td>
               <td className="px-4 py-3">Fast</td>
               <td className="px-4 py-3">Fast</td>
               <td className="px-4 py-3 text-red-400">Slow</td>
               <td className="px-4 py-3">Fast</td>
-              <td className="px-4 py-3 text-green-400">Instant</td>
+              <td className="px-4 py-3 text-cyan-400">Instant</td>
             </tr>
             <tr className="border-b border-zinc-700/50">
               <td className="px-4 py-3 text-zinc-300">Complexity</td>
               <td className="px-4 py-3 text-yellow-400">Medium</td>
               <td className="px-4 py-3 text-red-400">High</td>
-              <td className="px-4 py-3 text-green-400">Low</td>
-              <td className="px-4 py-3 text-green-400">Low</td>
+              <td className="px-4 py-3 text-cyan-400">Low</td>
+              <td className="px-4 py-3 text-cyan-400">Low</td>
               <td className="px-4 py-3 text-red-400">High</td>
               <td className="px-4 py-3 text-red-400">High</td>
             </tr>
@@ -91,8 +91,8 @@ export default function DeploymentStrategiesIndex() {
               <td className="px-4 py-3 text-zinc-300">Resource overhead</td>
               <td className="px-4 py-3 text-red-400">2x</td>
               <td className="px-4 py-3">Low-Med</td>
-              <td className="px-4 py-3 text-green-400">Low</td>
-              <td className="px-4 py-3 text-green-400">Low</td>
+              <td className="px-4 py-3 text-cyan-400">Low</td>
+              <td className="px-4 py-3 text-cyan-400">Low</td>
               <td className="px-4 py-3">Medium</td>
               <td className="px-4 py-3 text-red-400">2x</td>
             </tr>

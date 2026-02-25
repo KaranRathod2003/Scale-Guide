@@ -126,9 +126,9 @@ export default function ScalingScene({
         {/* Flow: Router → Pods + Pod content */}
         <div className="flex min-w-0 flex-1 items-start gap-2 sm:flex-[2] sm:gap-3">
           <div className="flex min-w-[20px] flex-1 items-center pt-3 sm:min-w-[30px] sm:pt-4">
-            <TrafficArrow color={isEventDriven ? '#f59e0b' : '#22c55e'} />
+            <TrafficArrow color={isEventDriven ? '#f59e0b' : '#22d3ee'} />
             <TrafficDots
-              color={isEventDriven ? '#f59e0b' : '#22c55e'}
+              color={isEventDriven ? '#f59e0b' : '#22d3ee'}
               count={dotCount}
               duration={1.8}
             />

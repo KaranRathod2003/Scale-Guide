@@ -8,13 +8,13 @@ interface LiveMetricsBarProps {
 }
 
 function colorForValue(value: number, thresholds: [number, number]): string {
-  if (value <= thresholds[0]) return 'text-green-400';
+  if (value <= thresholds[0]) return 'text-cyan-400';
   if (value <= thresholds[1]) return 'text-amber-400';
   return 'text-red-400';
 }
 
 function bgForValue(value: number, thresholds: [number, number]): string {
-  if (value <= thresholds[0]) return 'bg-green-500/10 border-green-500/20';
+  if (value <= thresholds[0]) return 'bg-cyan-500/10 border-cyan-500/20';
   if (value <= thresholds[1]) return 'bg-amber-500/10 border-amber-500/20';
   return 'bg-red-500/10 border-red-500/20';
 }
@@ -46,8 +46,8 @@ export default function LiveMetricsBar({ metrics }: LiveMetricsBarProps) {
   const cpuColor = colorForValue(metrics.cpuPercent, [60, 80]);
   const cpuBg = bgForValue(metrics.cpuPercent, [60, 80]);
 
-  const availColor = metrics.availability >= 99 ? 'text-green-400' : metrics.availability >= 95 ? 'text-amber-400' : 'text-red-400';
-  const availBg = metrics.availability >= 99 ? 'bg-green-500/10 border-green-500/20' : metrics.availability >= 95 ? 'bg-amber-500/10 border-amber-500/20' : 'bg-red-500/10 border-red-500/20';
+  const availColor = metrics.availability >= 99 ? 'text-cyan-400' : metrics.availability >= 95 ? 'text-amber-400' : 'text-red-400';
+  const availBg = metrics.availability >= 99 ? 'bg-cyan-500/10 border-cyan-500/20' : metrics.availability >= 95 ? 'bg-amber-500/10 border-amber-500/20' : 'bg-red-500/10 border-red-500/20';
 
   const latColor = colorForValue(metrics.latencyMs, [50, 200]);
   const latBg = bgForValue(metrics.latencyMs, [50, 200]);

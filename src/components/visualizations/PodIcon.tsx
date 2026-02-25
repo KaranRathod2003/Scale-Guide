@@ -9,7 +9,7 @@ interface PodIconProps {
 }
 
 function getCpuColor(cpu: number): string {
-  if (cpu < 50) return '#22c55e';
+  if (cpu < 50) return '#22d3ee';
   if (cpu < 70) return '#eab308';
   return '#ef4444';
 }

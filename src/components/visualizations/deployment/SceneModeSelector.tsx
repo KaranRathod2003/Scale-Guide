@@ -33,7 +33,7 @@ export default function SceneModeSelector({ scenes, activeScene, onSelect, disab
               isActive
                 ? isFailure
                   ? 'border-red-400/60 bg-red-500/10 shadow-lg shadow-red-500/10'
-                  : 'border-green-400/60 bg-green-500/10 shadow-lg shadow-green-500/10'
+                  : 'border-cyan-400/60 bg-cyan-500/10 shadow-lg shadow-cyan-500/10'
                 : 'border-zinc-600/40 bg-zinc-700/30 hover:border-zinc-500 hover:bg-zinc-700/50'
             } ${disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}`}
           >
@@ -42,16 +42,16 @@ export default function SceneModeSelector({ scenes, activeScene, onSelect, disab
               <div className={`absolute inset-0 opacity-30 ${
                 isFailure
                   ? 'bg-gradient-to-br from-red-500/10 to-transparent'
-                  : 'bg-gradient-to-br from-green-500/10 to-transparent'
+                  : 'bg-gradient-to-br from-cyan-500/10 to-transparent'
               }`} />
             )}
 
             <div className="relative">
               <div className="mb-1.5 flex items-center gap-2 sm:mb-2.5 sm:gap-2.5">
                 <div className={`flex h-7 w-7 items-center justify-center rounded-lg ${
-                  isFailure ? 'bg-red-500/15' : 'bg-green-500/15'
+                  isFailure ? 'bg-red-500/15' : 'bg-cyan-500/15'
                 }`}>
-                  <span className={isFailure ? 'text-red-400' : 'text-green-400'}>
+                  <span className={isFailure ? 'text-red-400' : 'text-cyan-400'}>
                     {isFailure ? (
                       <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
                         <circle cx="8" cy="8" r="6" />
@@ -68,7 +68,7 @@ export default function SceneModeSelector({ scenes, activeScene, onSelect, disab
                 <div>
                   <span className="block text-xs font-semibold text-white sm:text-sm">{scene.name}</span>
                   <span className={`text-[10px] font-medium ${
-                    isFailure ? 'text-red-400/80' : 'text-green-400/80'
+                    isFailure ? 'text-red-400/80' : 'text-cyan-400/80'
                   }`}>
                     {scene.company}
                   </span>
@@ -87,10 +87,10 @@ export default function SceneModeSelector({ scenes, activeScene, onSelect, disab
 
               {isActive && (
                 <span className={`mt-3 inline-flex items-center gap-1.5 text-[10px] font-medium ${
-                  isFailure ? 'text-red-400' : 'text-green-400'
+                  isFailure ? 'text-red-400' : 'text-cyan-400'
                 }`}>
                   <motion.span
-                    className={`inline-block h-1.5 w-1.5 rounded-full ${isFailure ? 'bg-red-400' : 'bg-green-400'}`}
+                    className={`inline-block h-1.5 w-1.5 rounded-full ${isFailure ? 'bg-red-400' : 'bg-cyan-400'}`}
                     animate={{ opacity: [1, 0.3, 1] }}
                     transition={{ duration: 1.5, repeat: Infinity }}
                   />

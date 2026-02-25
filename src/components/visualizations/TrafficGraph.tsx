@@ -9,7 +9,7 @@ interface TrafficGraphProps {
   color?: string;
 }
 
-export default function TrafficGraph({ points, maxValue, label, color = '#34d399' }: TrafficGraphProps) {
+export default function TrafficGraph({ points, maxValue, label, color = '#22d3ee' }: TrafficGraphProps) {
   const width = 300;
   const height = 60;
   const padding = 4;

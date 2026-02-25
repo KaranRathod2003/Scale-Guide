@@ -22,9 +22,9 @@ const typeConfig: Record<Hint['type'], { icon: string; border: string; bg: strin
   },
   success: {
     icon: '\u{2705}',
-    border: 'border-green-500/20',
-    bg: 'bg-green-500/5',
-    text: 'text-green-300',
+    border: 'border-cyan-500/20',
+    bg: 'bg-cyan-500/5',
+    text: 'text-cyan-300',
   },
 };
 

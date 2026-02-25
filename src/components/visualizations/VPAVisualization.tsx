@@ -190,7 +190,7 @@ export default function VPAVisualization() {
           >
             <div>
               <div className="mb-2 text-right">
-                <span className={`text-[10px] font-medium ${podStatus === 'evicting' ? 'text-red-400' : podStatus === 'recreating' ? 'text-yellow-400' : podStatus === 'optimized' ? 'text-green-400' : 'text-zinc-300'}`}>
+                <span className={`text-[10px] font-medium ${podStatus === 'evicting' ? 'text-red-400' : podStatus === 'recreating' ? 'text-yellow-400' : podStatus === 'optimized' ? 'text-cyan-400' : 'text-zinc-300'}`}>
                   {podStatus === 'running' && 'Running'}
                   {podStatus === 'evicting' && 'Evicting...'}
                   {podStatus === 'recreating' && 'Recreating...'}
@@ -209,7 +209,7 @@ export default function VPAVisualization() {
                     <span className="mt-0.5 text-[8px] text-yellow-400/60">New resources</span>
                   </motion.div>
                 ) : (
-                  <motion.div animate={{ width: Math.min(podWidth, 180), height: Math.min(podHeight, 110) }} transition={{ type: 'spring', stiffness: 180, damping: 20 }} className={`relative flex flex-col items-center justify-center rounded-xl border-2 ${podStatus === 'optimized' ? 'border-green-500' : 'border-brand-400'} bg-brand-500/5`}>
+                  <motion.div animate={{ width: Math.min(podWidth, 180), height: Math.min(podHeight, 110) }} transition={{ type: 'spring', stiffness: 180, damping: 20 }} className={`relative flex flex-col items-center justify-center rounded-xl border-2 ${podStatus === 'optimized' ? 'border-cyan-500' : 'border-brand-400'} bg-brand-500/5`}>
                     <div className="absolute bottom-2 left-2 right-2">
                       <div className="mb-0.5 flex justify-between text-[8px] text-zinc-400"><span>CPU: {cpuRequest}m</span><span>{Math.round(cpuUsage)}%</span></div>
                       <div className="h-2 overflow-hidden rounded-full bg-zinc-600/40"><motion.div animate={{ width: `${cpuUsage}%` }} transition={{ duration: 0.8 }} className="h-full rounded-full bg-brand-400" /></div>

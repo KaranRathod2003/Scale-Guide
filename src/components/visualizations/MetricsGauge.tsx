@@ -9,7 +9,7 @@ interface MetricsGaugeProps {
 }
 
 function getColor(value: number, threshold: number): string {
-  if (value < threshold * 0.7) return '#22c55e';
+  if (value < threshold * 0.7) return '#22d3ee';
   if (value < threshold) return '#eab308';
   return '#ef4444';
 }

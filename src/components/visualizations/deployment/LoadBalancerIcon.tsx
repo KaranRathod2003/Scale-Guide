@@ -7,14 +7,14 @@ interface LoadBalancerIconProps {
 }
 
 export default function LoadBalancerIcon({ isActive = false }: LoadBalancerIconProps) {
-  const color = isActive ? '#34d399' : '#71717a';
+  const color = isActive ? '#22d3ee' : '#71717a';
 
   return (
     <div className="relative flex flex-col items-center gap-1.5">
       {/* Active glow */}
       {isActive && (
         <motion.div
-          className="absolute -inset-3 rounded-2xl bg-emerald-500/10 blur-xl"
+          className="absolute -inset-3 rounded-2xl bg-cyan-500/10 blur-xl"
           animate={{ opacity: [0.2, 0.5, 0.2] }}
           transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
         />

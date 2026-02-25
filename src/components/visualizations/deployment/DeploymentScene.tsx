@@ -179,9 +179,9 @@ export default function DeploymentScene({
           {/* v2 path */}
           {hasV2 && (
             <div className="flex items-center gap-1.5 sm:gap-2">
-              <TrafficArrow color={isShadow ? '#71717a' : '#22c55e'} />
+              <TrafficArrow color={isShadow ? '#71717a' : '#22d3ee'} />
               <TrafficDots
-                color={isShadow ? '#71717a' : '#22c55e'}
+                color={isShadow ? '#71717a' : '#22d3ee'}
                 count={isShadow ? (isFlowing ? 2 : 0) : v2Dots}
                 duration={1.8}
                 opacity={isShadow ? 0.4 : 1}
@@ -189,8 +189,8 @@ export default function DeploymentScene({
               />
               <div className="flex min-w-0 flex-wrap items-center gap-1 sm:gap-1.5">
                 <div className="flex items-center gap-1">
-                  <span className={`h-1.5 w-1.5 rounded-full ${isShadow ? 'bg-zinc-600' : 'bg-green-500'}`} />
-                  <span className={`text-[8px] font-semibold whitespace-nowrap sm:text-[9px] ${isShadow ? 'text-zinc-400' : 'text-green-400'}`}>{v2Label}</span>
+                  <span className={`h-1.5 w-1.5 rounded-full ${isShadow ? 'bg-zinc-600' : 'bg-cyan-500'}`} />
+                  <span className={`text-[8px] font-semibold whitespace-nowrap sm:text-[9px] ${isShadow ? 'text-zinc-400' : 'text-cyan-400'}`}>{v2Label}</span>
                 </div>
                 <div className={`flex flex-wrap gap-1 sm:gap-2 ${isShadow ? 'opacity-50' : ''}`}>
                   <AnimatePresence mode="popLayout">

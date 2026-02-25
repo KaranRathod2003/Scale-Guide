@@ -11,7 +11,7 @@ export default function HeroSection() {
         <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#34d399" strokeWidth="0.5" opacity="0.3" />
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#22d3ee" strokeWidth="0.5" opacity="0.3" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#grid)" />
@@ -28,6 +28,42 @@ export default function HeroSection() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
+          {/* V2 Announcement Banner */}
+          <motion.a
+            href="https://scale-guide-v2.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="group mb-10 inline-flex items-center gap-3 rounded-full p-[1.5px] shimmer-border transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_28px_rgba(139,92,246,0.35)]"
+          >
+            <span className="flex items-center gap-3 rounded-full bg-surface px-5 py-2.5 text-sm">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 px-2.5 py-0.5 text-xs font-bold text-white">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" className="animate-pulse">
+                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                </svg>
+                NEW
+              </span>
+              <span className="text-zinc-300">
+                v2 is live — More exciting features await
+              </span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-zinc-500 transition-all duration-200 group-hover:translate-x-0.5 group-hover:text-violet-400"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
+          </motion.a>
+
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -114,8 +150,8 @@ function TopicPreview() {
       {/* Deployment preview */}
       <div className="rounded-xl border border-sky-500/20 bg-gradient-to-br from-sky-500/5 to-surface-raised p-4 sm:rounded-2xl sm:p-5">
         <div className="mb-3 flex items-center gap-2">
-          <div className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
-          <span className="text-xs font-medium text-emerald-400">Deployments</span>
+          <div className="h-2.5 w-2.5 rounded-full bg-cyan-400" />
+          <span className="text-xs font-medium text-cyan-400">Deployments</span>
         </div>
         <div className="mb-3 flex items-center justify-center gap-4 py-3">
           {/* Blue env */}
@@ -149,7 +185,7 @@ function TopicPreview() {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 0.4, scale: 1 }}
                 transition={{ delay: 1.0 + i * 0.1, type: 'spring', stiffness: 300 }}
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-dashed border-green-400/50 bg-green-500/10 text-green-400"
+                className="flex h-10 w-10 items-center justify-center rounded-lg border border-dashed border-cyan-400/50 bg-cyan-500/10 text-cyan-400"
               >
                 <span className="text-[9px] font-mono font-bold">v2</span>
               </motion.div>

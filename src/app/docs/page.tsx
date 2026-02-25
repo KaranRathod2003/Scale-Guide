@@ -75,7 +75,7 @@ export default function DocsIndex() {
             </tr>
             <tr className="border-b border-zinc-700/50">
               <td className="px-4 py-3 text-zinc-300">Complexity</td>
-              <td className="px-4 py-3 text-green-400">Low</td>
+              <td className="px-4 py-3 text-cyan-400">Low</td>
               <td className="px-4 py-3 text-yellow-400">Medium</td>
               <td className="px-4 py-3 text-yellow-400">Medium</td>
               <td className="px-4 py-3 text-yellow-400">Medium</td>

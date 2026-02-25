@@ -13,7 +13,7 @@ export interface LogEntry {
 const typeStyles: Record<LogEntry['type'], { dot: string; text: string }> = {
   info: { dot: 'bg-blue-400', text: 'text-blue-300' },
   warning: { dot: 'bg-amber-400', text: 'text-amber-300' },
-  success: { dot: 'bg-green-400', text: 'text-green-300' },
+  success: { dot: 'bg-cyan-400', text: 'text-cyan-300' },
   error: { dot: 'bg-red-400', text: 'text-red-300' },
   action: { dot: 'bg-brand-400', text: 'text-brand-300' },
 };

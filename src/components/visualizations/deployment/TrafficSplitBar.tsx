@@ -19,8 +19,8 @@ export default function TrafficSplitBar({ v1Percent, v2Percent, label = 'Traffic
             <span className="font-mono text-[11px] text-blue-400 sm:text-xs">v1: {Math.round(v1Percent)}%</span>
           </span>
           <span className="flex items-center gap-1.5">
-            <span className="h-2 w-2 rounded-full bg-green-500" />
-            <span className="font-mono text-[11px] text-green-400 sm:text-xs">v2: {Math.round(v2Percent)}%</span>
+            <span className="h-2 w-2 rounded-full bg-cyan-500" />
+            <span className="font-mono text-[11px] text-cyan-400 sm:text-xs">v2: {Math.round(v2Percent)}%</span>
           </span>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function TrafficSplitBar({ v1Percent, v2Percent, label = 'Traffic
           transition={{ duration: 0.8, ease: 'easeInOut' }}
         />
         <motion.div
-          className="h-full bg-gradient-to-r from-green-600 to-green-500"
+          className="h-full bg-gradient-to-r from-cyan-600 to-cyan-500"
           style={{ borderRadius: v1Percent > 0 ? '0 9999px 9999px 0' : '9999px' }}
           animate={{ width: `${v2Percent}%` }}
           transition={{ duration: 0.8, ease: 'easeInOut' }}
